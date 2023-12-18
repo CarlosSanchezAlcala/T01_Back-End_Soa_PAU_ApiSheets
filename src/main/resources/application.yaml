@@ -2,6 +2,13 @@ server:
   port: 8087
 
 spring:
+  main:
+    allow-bean-definition-overriding: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9091/realms/SOA
   graphql:
     cors:
       allowed-origins: "*"

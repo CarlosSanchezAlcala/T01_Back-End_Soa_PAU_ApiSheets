@@ -12,7 +12,6 @@ import java.util.Map;
 
 
 @RestController
-@CrossOrigin(origins ="*", allowedHeaders = "*")
 public class DashboardController {
     @Autowired
     private GoogleApiService googleApiService;
